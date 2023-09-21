@@ -1,0 +1,28 @@
+body {
+    background-color: #48cef7; /* Set the background color you prefer */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 100px;
+}
+
+
+h1 {
+    font-size: 36px;
+    color: #000000; /* Set the text color you prefer */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+h2 {
+    font-size: 36px;
+    color: #000000; /* Set the text color you prefer */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
