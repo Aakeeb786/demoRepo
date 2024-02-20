@@ -1,5 +1,6 @@
+/* Default styles for larger screens */
 body {
-    background-color:#8fe5eb       ; /* Set the background color you prefer */
+    background-color: #74d9f8;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -10,17 +11,12 @@ body {
     padding: 100px;
 }
 
-
-h1 {
-    font-size: 36px;
-    color: #000000; /* Set the text color you prefer */
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 10px;
+h1, h2, p {
+    color: #000000;
 }
-h2 {
+
+h1, h2 {
     font-size: 36px;
-    color: #000000; /* Set the text color you prefer */
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
     border-radius: 10px;
@@ -34,73 +30,61 @@ h2 {
     font-size: 24px;
     margin: 0 10px;
     text-decoration: none;
-    color: #c9101050; /* Set the text color you prefer */
+    color: #c9101050;
     background-color: rgba(233, 240, 234, 0.897);
     padding: 10px 20px;
     border-radius: 50%;
 }
 
-.social-buttons a i.fab.fa-linkedin {
-    font-size: 24px;
-    margin: 0 5px;
-    text-decoration: none;
-    color: #ffffff; /* Set the text color you prefer */
-    background-color: rgba(44, 11, 233, 0.5);
-    padding: 10px 20px;
-    border-radius: 50%;
-}
-
-.social-buttons a i.fab.fa-instagram {
-    font-size: 24px;
-    margin: 0 5px;
-    text-decoration: none;
-    color: #d426a0; /* Set the text color you prefer */
-    background-color: rgba(255, 0, 212, 0.5); /* Customize the background color */
-    padding: 10px 20px;
-    border-radius: 80%;
-}
-.social-buttons a i.fab.fa-whatsapp {
-    font-size: 24px;
-    margin: 0 10px;
-    text-decoration: none;
-    color: #0af832; /* Set the text color you prefer */
-    background-color: rgba(241, 241, 241, 0.5); /* Customize the background color */
-    padding: 10px 20px;
-    border-radius: 50%;
-}
-
-.social-buttons a i.fab.fa-facebook {
-    font-size: 24px;
-    margin: 0 10px;
-    text-decoration: none;
-    color: #0a8fe7; /* Set the text color you prefer */
-    background-color: #ffffff(59, 89, 152, 0.5); /* Customize the background color */
-    padding: 10px 20px;
-    border-radius: 50%;
-}
+.social-buttons a i.fab.fa-linkedin,
+.social-buttons a i.fab.fa-instagram,
+.social-buttons a i.fab.fa-whatsapp,
+.social-buttons a i.fab.fa-facebook,
 .social-buttons a i.fas.fa-envelope {
     font-size: 24px;
-    margin: 0 10px;
+    margin: 0 5px;
     text-decoration: none;
-    color: #d11975; /* Set the text color you prefer */
-    background-color: #ffffff(255, 165, 0, 0.5); /* Customize the background color */
     padding: 10px 20px;
     border-radius: 50%;
-    d styling for the new sections */
-    #introduction, #education, #hobbies, #passions {
-        margin-top: 40px;
+}
+
+#introduction, #education, #hobbies, #passions {
+    margin-top: 40px;
+}
+
+#introduction p, #education p, #hobbies ul, #passions p {
+    font-size: 18px;
+}
+
+#hobbies ul {
+    list-style: none;
+    padding: 0;
+}
+
+#hobbies li {
+    margin-bottom: 10px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 20px; /* Adjust padding for smaller screens */
     }
-    
-    #introduction p, #education p, #hobbies ul, #passions p {
+
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    .social-buttons a {
         font-size: 18px;
+        padding: 8px 16px; /* Adjust padding for smaller screens */
     }
-    
-    #hobbies ul {
-        list-style: none;
-        padding: 0;
+
+    #introduction, #education, #hobbies, #passions {
+        margin-top: 20px;
     }
-    
-    #hobbies li {
-        margin-bottom: 10px;
+
+    #introduction p, #education p, #hobbies ul, #passions p {
+        font-size: 16px;
     }
 }
